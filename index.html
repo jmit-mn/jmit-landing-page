@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JMIT — Mission & Vision</title>
+  <meta name="description" content="JMIT — Our mission and vision." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#top" class="brand">JMIT</a>
+      <ul class="nav-links">
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>JMIT</h1>
+          <p class="tagline">Building thoughtful solutions with purpose.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#mission">Our Mission</a>
+            <a class="btn ghost" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-avatar" aria-hidden="true">
+          <div class="avatar-placeholder">JM</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission" class="section">
+      <div class="container">
+        <h2>Mission</h2>
+        <p class="lead">
+          To deliver clear, honest, and high-quality work that solves real
+          problems — empowering people and organizations to move forward
+          with confidence.
+        </p>
+      </div>
+    </section>
+
+    <section id="vision" class="section alt">
+      <div class="container">
+        <h2>Vision</h2>
+        <p class="lead">
+          A world where technology serves people first — simple, accessible,
+          and built to last.
+        </p>
+      </div>
+    </section>
+
+    <section id="values" class="section">
+      <div class="container">
+        <h2>Values</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Integrity</h3>
+            <p>We do what we say, and we say what we mean.</p>
+          </div>
+          <div class="card">
+            <h3>Craft</h3>
+            <p>Quality work, done carefully, with an eye for detail.</p>
+          </div>
+          <div class="card">
+            <h3>Impact</h3>
+            <p>Outcomes that matter — for users, teams, and communities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2>About</h2>
+        <p class="lead">
+          JMIT is a small, focused practice committed to thoughtful work.
+          Replace this paragraph with a short bio or organizational summary.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container center">
+        <h2>Contact</h2>
+        <p class="lead">Reach out to start a conversation.</p>
+        <a class="btn primary" href="mailto:hello@example.com">Send Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> JMIT. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
