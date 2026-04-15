@@ -1,5 +1,25 @@
+node_modules
 .DS_Store
-node_modules/
-.vercel
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Env
 .env
-.env.local
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+
+# Editor
+.idea
+.vscode/*
+!.vscode/settings.json
+
+# Vercel
+.vercel
