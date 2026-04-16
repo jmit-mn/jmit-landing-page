@@ -16,7 +16,7 @@
         JMIT
       </h1>
       <p class="mt-4 text-2xl font-semibold text-slate-700 sm:text-3xl">
-        {{ $t('hero.subtitle') }}
+        {{ t('hero.subtitle') }}
       </p>
       <div class="mt-4 flex items-center justify-center gap-3 text-2xl">
         <span aria-label="Japan">🇯🇵</span>
@@ -25,7 +25,7 @@
       </div>
 
       <p class="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-slate-600">
-        {{ $t('hero.description') }}
+        {{ t('hero.description') }}
       </p>
 
       <div class="mt-10 flex flex-wrap justify-center gap-3">
@@ -33,15 +33,19 @@
           href="#mission"
           class="rounded-lg bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700"
         >
-          {{ $t('hero.ourMission') }}
+          {{ t('hero.ourMission') }}
         </a>
         <a
           href="#focus"
           class="rounded-lg border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
         >
-          {{ $t('hero.focusAreas') }}
+          {{ t('hero.focusAreas') }}
         </a>
       </div>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const { t } = useI18n();
+</script>

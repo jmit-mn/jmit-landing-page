@@ -3,12 +3,12 @@
     <div class="mx-auto max-w-4xl px-6">
       <div class="mb-12 text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-blue-700">
-          {{ $t('about.kicker') }}
+          {{ t('about.kicker') }}
         </p>
         <h2
           class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
         >
-          {{ $t('about.heading') }}
+          {{ t('about.heading') }}
         </h2>
       </div>
 
@@ -25,10 +25,14 @@
           <h3 class="text-xl font-bold text-slate-900">Sura.Kh</h3>
           <p class="text-sm text-slate-500">@sugarragchaa.kh</p>
           <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            {{ $t('about.bio') }}
+            {{ t('about.bio') }}
           </p>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const { t } = useI18n();
+</script>

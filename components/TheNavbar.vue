@@ -14,12 +14,12 @@
       </a>
       <div class="hidden items-center gap-6 md:flex">
         <ul class="flex items-center gap-6 text-sm text-slate-600">
-          <li><a href="#mission" class="hover:text-slate-900">{{ $t('nav.mission') }}</a></li>
-          <li><a href="#why-now" class="hover:text-slate-900">{{ $t('nav.whyNow') }}</a></li>
-          <li><a href="#focus" class="hover:text-slate-900">{{ $t('nav.focus') }}</a></li>
-          <li><a href="#achievements" class="hover:text-slate-900">{{ $t('nav.achievements') }}</a></li>
-          <li><a href="#members" class="hover:text-slate-900">{{ $t('nav.members') }}</a></li>
-          <li><a href="#about" class="hover:text-slate-900">{{ $t('nav.about') }}</a></li>
+          <li><a href="#mission" class="hover:text-slate-900">{{ t('nav.mission') }}</a></li>
+          <li><a href="#why-now" class="hover:text-slate-900">{{ t('nav.whyNow') }}</a></li>
+          <li><a href="#focus" class="hover:text-slate-900">{{ t('nav.focus') }}</a></li>
+          <li><a href="#achievements" class="hover:text-slate-900">{{ t('nav.achievements') }}</a></li>
+          <li><a href="#members" class="hover:text-slate-900">{{ t('nav.members') }}</a></li>
+          <li><a href="#about" class="hover:text-slate-900">{{ t('nav.about') }}</a></li>
         </ul>
         <div class="flex items-center gap-2 border-l border-slate-200 pl-4 text-sm">
           <NuxtLink
@@ -40,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-const { locale, locales: rawLocales } = useI18n();
+const { t, locale, locales: rawLocales } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 
 const locales = computed(() =>

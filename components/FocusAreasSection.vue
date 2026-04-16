@@ -3,12 +3,12 @@
     <div class="mx-auto max-w-6xl px-6">
       <div class="mb-12 text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-blue-700">
-          {{ $t('focus.kicker') }}
+          {{ t('focus.kicker') }}
         </p>
         <h2
           class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
         >
-          {{ $t('focus.heading') }}
+          {{ t('focus.heading') }}
         </h2>
       </div>
 
@@ -36,5 +36,5 @@
 </template>
 
 <script setup lang="ts">
-const { tm, rt } = useI18n();
+const { t, tm, rt } = useI18n();
 </script>

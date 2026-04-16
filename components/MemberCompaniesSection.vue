@@ -3,15 +3,15 @@
     <div class="mx-auto max-w-6xl px-6">
       <div class="mb-12 text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-blue-700">
-          {{ $t('members.kicker') }}
+          {{ t('members.kicker') }}
         </p>
         <h2
           class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
         >
-          {{ $t('members.heading') }}
+          {{ t('members.heading') }}
         </h2>
         <p class="mx-auto mt-4 max-w-2xl text-base text-slate-600">
-          {{ $t('members.description') }}
+          {{ t('members.description') }}
         </p>
       </div>
 
@@ -44,6 +44,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { memberCompanies } from '../configs/members';
+
+const { t } = useI18n();
 
 const companies = computed(() => {
   return memberCompanies.filter((company) => company.memberType != "observer");

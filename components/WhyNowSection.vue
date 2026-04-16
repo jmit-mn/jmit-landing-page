@@ -3,12 +3,12 @@
     <div class="mx-auto max-w-6xl px-6">
       <div class="mb-12 text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-blue-700">
-          {{ $t('whyNow.kicker') }}
+          {{ t('whyNow.kicker') }}
         </p>
         <h2
           class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
         >
-          {{ $t('whyNow.heading') }}
+          {{ t('whyNow.heading') }}
         </h2>
       </div>
 
@@ -16,7 +16,7 @@
         <div class="rounded-2xl border border-red-200 bg-white p-8 shadow-sm">
           <div class="mb-5 flex items-center gap-3">
             <div class="h-10 w-10 rounded-full bg-red-600"></div>
-            <h3 class="text-2xl font-bold text-slate-900">{{ $t('whyNow.japan') }}</h3>
+            <h3 class="text-2xl font-bold text-slate-900">{{ t('whyNow.japan') }}</h3>
           </div>
           <ul class="space-y-3 text-slate-700">
             <li
@@ -35,7 +35,7 @@
         <div class="rounded-2xl border border-blue-200 bg-white p-8 shadow-sm">
           <div class="mb-5 flex items-center gap-3">
             <div class="h-10 w-10 rounded-full bg-blue-700"></div>
-            <h3 class="text-2xl font-bold text-slate-900">{{ $t('whyNow.mongolia') }}</h3>
+            <h3 class="text-2xl font-bold text-slate-900">{{ t('whyNow.mongolia') }}</h3>
           </div>
           <ul class="space-y-3 text-slate-700">
             <li
@@ -56,7 +56,7 @@
         <h3
           class="mb-5 text-center text-lg font-semibold text-slate-900"
         >
-          {{ $t('whyNow.synergyHeading') }}
+          {{ t('whyNow.synergyHeading') }}
         </h3>
         <div class="mx-auto max-w-2xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
           <div
@@ -82,5 +82,5 @@
 </template>
 
 <script setup lang="ts">
-const { tm, rt } = useI18n();
+const { t, tm, rt } = useI18n();
 </script>

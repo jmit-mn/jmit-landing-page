@@ -3,10 +3,10 @@
     <div class="mx-auto max-w-6xl px-6">
       <div class="mb-12 text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-blue-400">
-          {{ $t('achievements.kicker') }}
+          {{ t('achievements.kicker') }}
         </p>
         <h2 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-          {{ $t('achievements.heading') }}
+          {{ t('achievements.heading') }}
         </h2>
       </div>
 
@@ -26,7 +26,7 @@
       <div
         class="mt-8 rounded-2xl border border-slate-700 bg-slate-800/50 p-8"
       >
-        <h3 class="mb-5 text-lg font-semibold">{{ $t('achievements.milestonesHeading') }}</h3>
+        <h3 class="mb-5 text-lg font-semibold">{{ t('achievements.milestonesHeading') }}</h3>
         <ul class="space-y-3 text-sm text-slate-300">
           <li
             v-for="(milestone, i) in tm('achievements.milestones')"
@@ -45,5 +45,5 @@
 </template>
 
 <script setup lang="ts">
-const { tm, rt } = useI18n();
+const { t, tm, rt } = useI18n();
 </script>

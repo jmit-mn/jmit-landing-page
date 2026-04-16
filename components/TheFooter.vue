@@ -13,7 +13,7 @@
         </div>
         <div class="text-center sm:text-right">
           <p class="text-sm text-slate-600">
-            {{ $t('footer.copyright', { year }) }}
+            {{ t('footer.copyright', { year }) }}
           </p>
           <a
             href="mailto:jmit-consortium@googlegroups.com"
@@ -28,5 +28,6 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n();
 const year = new Date().getFullYear();
 </script>
