@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "mission": "Mission",
+    "whyNow": "Why Now",
+    "focus": "Focus",
+    "achievements": "Achievements",
+    "members": "Members",
+    "about": "About"
+  },
+  "hero": {
+    "subtitle": "Japan Mongolia IT Consortium",
+    "description": "Connecting Japan and Mongolia through intellectual cooperation — fostering collaboration between Mongolian IT startups and Japanese companies.",
+    "ourMission": "Our Mission",
+    "focusAreas": "Focus Areas"
+  },
+  "mission": {
+    "kicker": "Purpose",
+    "heading": "Intellectual Cooperation",
+    "japan": "Japan",
+    "mongolia": "Mongolia",
+    "cooperation": "COOPERATION",
+    "body": "The Japan-Mongolia IT Consortium connects Japan and Mongolia, fostering collaboration between Mongolian IT startups and Japanese companies — aiming to become a core organization in the IT industry and contribute to the growth of Mongolia's startup ecosystem.",
+    "visionKicker": "Vision",
+    "visionText": "From trade to knowledge — evolving the Japan–Mongolia relationship into a knowledge-based collaboration."
+  },
+  "whyNow": {
+    "kicker": "Why Now",
+    "heading": "Shared Needs, Shared Opportunities",
+    "japan": "Japan",
+    "mongolia": "Mongolia",
+    "japanBullets": [
+      "Facing a significant <strong>IT talent shortage</strong>",
+      "Interest in digital innovation for <strong>mining, agriculture, and infrastructure</strong> — Mongolia offers unique testing environments"
+    ],
+    "mongoliaBullets": [
+      "<strong>Young, growing tech workforce</strong> (median age ~27)",
+      "<strong>IT as a strategic export</strong> for a landlocked economy",
+      "Strong drive toward a <strong>knowledge-based economy</strong>"
+    ],
+    "synergyHeading": "Synergy Potential",
+    "synergy": [
+      { "jp": "Ability to materialize ideas", "mn": "Creativity" },
+      { "jp": "Perseverance", "mn": "Breakthrough power" },
+      { "jp": "Reputation", "mn": "Solutions" },
+      { "jp": "Consistency", "mn": "Agility" },
+      { "jp": "Methodical approach", "mn": "Rapid execution" }
+    ]
+  },
+  "focus": {
+    "kicker": "Focus Areas",
+    "heading": "How We Work Together",
+    "areas": [
+      {
+        "title": "Joint IT Projects and Programs",
+        "description": "Study and share the experience of IT companies from Ulaanbaatar and Shinagawa. Support joint projects and cross-border programs between enterprises and institutions."
+      },
+      {
+        "title": "Outsourcing IT Projects",
+        "description": "Enable Japanese companies to collaborate with skilled Mongolian IT teams — combining technical expertise, reliability, and adaptability with strong PM and QA support."
+      },
+      {
+        "title": "Co-Innovation Events",
+        "description": "Organize joint events with the City of Ulaanbaatar and Gotanda Valley Association to promote innovation and business collaboration between Japan and Mongolia."
+      },
+      {
+        "title": "Digital Nomad Program",
+        "description": "Provide Japanese companies with access to skilled Mongolian engineers and professionals through remote and freelance team-building opportunities."
+      },
+      {
+        "title": "Research & Development",
+        "description": "Develop cooperation in science, technology, and innovation. Promote academic exchange and training courses for designers and programmers."
+      },
+      {
+        "title": "Startup Acceleration",
+        "description": "Support Mongolian startup entrepreneurs through mentorship, incubation, and knowledge exchange — fostering an innovation-driven culture."
+      }
+    ]
+  },
+  "achievements": {
+    "kicker": "Achievements",
+    "heading": "What We've Built So Far",
+    "stats": [
+      { "value": "30+", "label": "Japan–Mongolia IT projects across member companies" },
+      { "value": "2", "label": "Mongolian startups engaged via EOR model (6 engineers)" },
+      { "value": "140+", "label": "Partner companies in Gotanda Valley network" },
+      { "value": "2025", "label": "ICT Seminar co-hosted in Tokyo with Mongolian government" }
+    ],
+    "milestonesHeading": "Key milestones",
+    "milestones": [
+      { "date": "2024-05", "event": "MoU signed between Ulaanbaatar City and Shinagawa (Gotanda Valley)" },
+      { "date": "2024-08", "event": "Japan-Mongolia International Business Innovation Forum" },
+      { "date": "2024-11", "event": "Japan-Mongolia IT Consortium established as NGO in Mongolia" },
+      { "date": "2025-03", "event": "ICT Seminar 2025 in Tokyo — attended by Mongolian Foreign Minister" }
+    ]
+  },
+  "members": {
+    "kicker": "Consortium",
+    "heading": "Member Companies",
+    "description": "Companies represented on the JMIT board — driving intellectual cooperation between Japan and Mongolia."
+  },
+  "about": {
+    "kicker": "Leadership",
+    "heading": "Executive Director",
+    "bio": "Executive Director at JMIT (2024~) and CEO of Tab Systems Mongolia LLC. Previously Engineering Manager at Rakuten Group, Inc. (2017–2024). Graduate of Tokyo University of Electro-Communications."
+  },
+  "footer": {
+    "copyright": "Japan Mongolia IT Consortium © {year}"
+  }
+}
