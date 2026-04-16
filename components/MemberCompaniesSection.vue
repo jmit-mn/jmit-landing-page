@@ -16,34 +16,30 @@
       </div>
 
       <ul class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        <li
-          v-for="company in companies"
-          :key="company.name"
-          class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-slate-300 hover:shadow-md"
-        >
-          <div
-            class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-linear-to-br from-red-600 to-blue-700 text-sm font-bold text-white"
-            aria-hidden="true"
+        <li v-for="company in companies" :key="company.name">
+          <component
+            :is="company.link ? 'a' : 'div'"
+            :href="company.link || undefined"
+            :target="company.link ? '_blank' : undefined"
+            :rel="company.link ? 'noopener noreferrer' : undefined"
+            class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-slate-300 hover:shadow-md"
+            :class="company.link ? 'cursor-pointer' : ''"
           >
-            {{ company.initials }}
-          </div>
-          <div class="min-w-0">
-            <h3 class="text-base font-semibold text-slate-900">
-              <a
-                v-if="company.link"
-                :href="company.link"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="transition hover:text-blue-700"
-              >
+            <div
+              class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-linear-to-br from-red-600 to-blue-700 text-sm font-bold text-white"
+              aria-hidden="true"
+            >
+              {{ company.initials }}
+            </div>
+            <div class="min-w-0">
+              <h3 class="text-base font-semibold text-slate-900">
                 {{ company.name }}
-              </a>
-              <span v-else>{{ company.name }}</span>
-            </h3>
-            <p class="mt-1 text-sm text-slate-500">
-              {{ company.representative }}
-            </p>
-          </div>
+              </h3>
+              <p class="mt-1 text-sm text-slate-500">
+                {{ company.representative }}
+              </p>
+            </div>
+          </component>
         </li>
       </ul>
     </div>
