@@ -16,7 +16,7 @@
         class="mx-auto flex max-w-2xl flex-col items-center gap-6 rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm sm:flex-row sm:text-left"
       >
         <div
-          class="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-red-600 to-blue-700 text-xl font-bold text-white"
+          class="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-red-600 to-blue-700 text-xl font-bold text-white"
           aria-hidden="true"
         >
           SK

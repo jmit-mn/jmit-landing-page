@@ -30,7 +30,7 @@
             </li>
             <li class="flex gap-3">
               <span
-                class="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-600"
+                class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-red-600"
               ></span>
               <span>
                 Interest in digital innovation for
@@ -51,7 +51,7 @@
           <ul class="space-y-3 text-slate-700">
             <li class="flex gap-3">
               <span
-                class="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-blue-700"
+                class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-700"
               ></span>
               <span>
                 <strong class="text-slate-900">Young, growing tech workforce</strong>
@@ -60,7 +60,7 @@
             </li>
             <li class="flex gap-3">
               <span
-                class="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-blue-700"
+                class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-700"
               ></span>
               <span>
                 <strong class="text-slate-900">IT as a strategic export</strong>
@@ -69,7 +69,7 @@
             </li>
             <li class="flex gap-3">
               <span
-                class="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-blue-700"
+                class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-700"
               ></span>
               <span>
                 Strong drive toward a
@@ -92,8 +92,8 @@
             :key="pair.jp"
             class="grid grid-cols-[1fr_auto_1fr] items-center gap-4 rounded-lg bg-slate-50 px-4 py-3"
           >
-            <span class="text-right text-sm text-slate-700">{{ pair.jp }}</span>
-            <span class="text-slate-400">→</span>
+            <span class="text-right text-sm font-semibold text-slate-700">{{ pair.jp }}</span>
+            <span class="text-slate-400">↔︎</span>
             <span class="text-left text-sm font-semibold text-slate-900">{{ pair.mn }}</span>
           </div>
         </div>

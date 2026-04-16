@@ -18,9 +18,9 @@
           </p>
         </div>
         <div class="rounded-2xl border border-slate-700 bg-slate-800 p-6">
-          <p class="text-4xl font-bold">2</p>
+          <p class="text-4xl font-bold">{{ memberMongolianCompaniesCount }}</p>
           <p class="mt-2 text-sm text-slate-300">
-            Mongolian startups engaged via EOR model (6 engineers)
+            Mongolian startups
           </p>
         </div>
         <div class="rounded-2xl border border-slate-700 bg-slate-800 p-6">
@@ -59,6 +59,9 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
+import { memberCompanies } from '../configs/members';
+
 const milestones = [
   {
     date: "2024-05",
@@ -78,4 +81,8 @@ const milestones = [
       "ICT Seminar 2025 in Tokyo — attended by Mongolian Foreign Minister",
   },
 ];
+
+const memberMongolianCompaniesCount = computed(() => {
+  return memberCompanies.filter((company) => company.classification === "mongolia").length;
+});
 </script>

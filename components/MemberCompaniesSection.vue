@@ -23,7 +23,7 @@
           class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-slate-300 hover:shadow-md"
         >
           <div
-            class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-red-600 to-blue-700 text-sm font-bold text-white"
+            class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-red-600 to-blue-700 text-sm font-bold text-white"
             aria-hidden="true"
           >
             {{ company.initials }}
@@ -43,42 +43,10 @@
 </template>
 
 <script setup lang="ts">
-type MemberCompany = {
-  name: string;
-  initials: string;
-  representative: string;
-};
+import { computed } from 'vue';
+import { memberCompanies } from '../configs/members';
 
-const companies: MemberCompany[] = [
-  {
-    name: "Gotanda Valley",
-    initials: "GV",
-    representative: "Mori Yoshitaka",
-  },
-  {
-    name: "Gertech Inc",
-    initials: "GI",
-    representative: "B.Khatanbold · M.Ganmurun",
-  },
-  {
-    name: "DX Mongolia LLC",
-    initials: "DX",
-    representative: "B.Tuguldur",
-  },
-  {
-    name: "Tab Solution Co.,Ltd",
-    initials: "TS",
-    representative: "E.Tuvshinbat",
-  },
-  {
-    name: "Tab Systems Mongolia LLC",
-    initials: "TM",
-    representative: "Kh.Sugarragchaa",
-  },
-  {
-    name: "JUGAMO",
-    initials: "JG",
-    representative: "Z.Sugar",
-  },
-];
+const companies = computed(() => {
+  return memberCompanies.filter((company) => company.memberType != "observer");
+});
 </script>
