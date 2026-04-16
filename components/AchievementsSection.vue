@@ -16,9 +16,9 @@
           :key="i"
           class="rounded-2xl border border-slate-700 bg-slate-800 p-6"
         >
-          <p class="text-4xl font-bold">{{ (stat as any).value }}</p>
+          <p class="text-4xl font-bold">{{ rt((stat as any).value) }}</p>
           <p class="mt-2 text-sm text-slate-300">
-            {{ (stat as any).label }}
+            {{ rt((stat as any).label) }}
           </p>
         </div>
       </div>
@@ -34,9 +34,9 @@
             class="flex gap-4"
           >
             <span class="w-24 shrink-0 font-mono text-blue-400">
-              {{ (milestone as any).date }}
+              {{ rt((milestone as any).date) }}
             </span>
-            <span>{{ (milestone as any).event }}</span>
+            <span>{{ rt((milestone as any).event) }}</span>
           </li>
         </ul>
       </div>
@@ -45,5 +45,5 @@
 </template>
 
 <script setup lang="ts">
-const { tm } = useI18n();
+const { tm, rt } = useI18n();
 </script>

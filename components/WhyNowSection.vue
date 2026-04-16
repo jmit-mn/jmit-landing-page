@@ -65,14 +65,14 @@
             class="flex items-center border-b border-slate-100 last:border-0"
           >
             <div class="flex-1 px-5 py-3 text-right text-sm text-slate-700">
-              {{ (pair as any).jp }}
+              {{ rt((pair as any).jp) }}
             </div>
             <div class="flex items-center gap-2 px-3">
               <span class="h-2 w-2 rounded-full bg-red-600"></span>
               <span class="h-2 w-2 rounded-full bg-blue-700"></span>
             </div>
             <div class="flex-1 px-5 py-3 text-sm text-slate-700">
-              {{ (pair as any).mn }}
+              {{ rt((pair as any).mn) }}
             </div>
           </div>
         </div>

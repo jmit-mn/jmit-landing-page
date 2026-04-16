@@ -24,10 +24,10 @@
             >
               {{ idx + 1 }}
             </div>
-            <h3 class="text-lg font-semibold text-slate-900">{{ (area as any).title }}</h3>
+            <h3 class="text-lg font-semibold text-slate-900">{{ rt((area as any).title) }}</h3>
           </div>
           <p class="text-sm leading-relaxed text-slate-600">
-            {{ (area as any).description }}
+            {{ rt((area as any).description) }}
           </p>
         </article>
       </div>
@@ -36,5 +36,5 @@
 </template>
 
 <script setup lang="ts">
-const { tm } = useI18n();
+const { tm, rt } = useI18n();
 </script>
