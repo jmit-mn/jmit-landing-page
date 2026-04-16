@@ -87,6 +87,9 @@ const { t, tm, rt } = useI18n();
 const japanBullets = computed(() => tm('whyNow.japanBullets') as string[]);
 const mongoliaBullets = computed(() => tm('whyNow.mongoliaBullets') as string[]);
 const synergy = computed(() =>
-  tm('whyNow.synergy') as Array<{ jp: string; mn: string }>
+  (tm('whyNow.synergy') as any[]).map((pair) => ({
+    jp: rt(pair.jp),
+    mn: rt(pair.mn),
+  }))
 );
 </script>
