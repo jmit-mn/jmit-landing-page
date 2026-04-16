@@ -79,12 +79,6 @@
   "achievements": {
     "kicker": "Achievements",
     "heading": "What We've Built So Far",
-    "stats": [
-      { "value": "30+", "label": "Japan–Mongolia IT projects across member companies" },
-      { "value": "2", "label": "Mongolian startups engaged via EOR model (6 engineers)" },
-      { "value": "140+", "label": "Partner companies in Gotanda Valley network" },
-      { "value": "2025", "label": "ICT Seminar co-hosted in Tokyo with Mongolian government" }
-    ],
     "milestonesHeading": "Key milestones",
     "milestones": [
       { "date": "2024-05", "event": "MoU signed between Ulaanbaatar City and Shinagawa (Gotanda Valley)" },

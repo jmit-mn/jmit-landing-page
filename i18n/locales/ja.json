@@ -79,12 +79,6 @@
   "achievements": {
     "kicker": "実績",
     "heading": "これまでの成果",
-    "stats": [
-      { "value": "30+", "label": "メンバー企業間の日本・モンゴルITプロジェクト" },
-      { "value": "2", "label": "EORモデルで活動するモンゴルスタートアップ（エンジニア6名）" },
-      { "value": "140+", "label": "五反田バレーネットワークのパートナー企業" },
-      { "value": "2025", "label": "モンゴル政府との東京ICTセミナー共催" }
-    ],
     "milestonesHeading": "主要マイルストーン",
     "milestones": [
       { "date": "2024年5月", "event": "ウランバートル市と品川区（五反田バレー）間のMoU締結" },
