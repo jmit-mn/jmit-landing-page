@@ -19,6 +19,7 @@
         <li>
           <a href="#achievements" class="hover:text-slate-900">Achievements</a>
         </li>
+        <li><a href="#members" class="hover:text-slate-900">Members</a></li>
         <li><a href="#about" class="hover:text-slate-900">About</a></li>
       </ul>
     </nav>

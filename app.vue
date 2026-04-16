@@ -7,6 +7,7 @@
       <WhyNowSection />
       <FocusAreasSection />
       <AchievementsSection />
+      <MemberCompaniesSection />
       <AboutSection />
     </main>
     <TheFooter />
