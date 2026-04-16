@@ -20,7 +20,7 @@
           </div>
           <ul class="space-y-3 text-slate-700">
             <li
-              v-for="(bullet, i) in tm('whyNow.japanBullets')"
+              v-for="(bullet, i) in japanBullets"
               :key="i"
               class="flex gap-3"
             >
@@ -39,7 +39,7 @@
           </div>
           <ul class="space-y-3 text-slate-700">
             <li
-              v-for="(bullet, i) in tm('whyNow.mongoliaBullets')"
+              v-for="(bullet, i) in mongoliaBullets"
               :key="i"
               class="flex gap-3"
             >
@@ -60,19 +60,19 @@
         </h3>
         <div class="mx-auto max-w-2xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
           <div
-            v-for="(pair, i) in tm('whyNow.synergy')"
+            v-for="(pair, i) in synergy"
             :key="i"
             class="flex items-center border-b border-slate-100 last:border-0"
           >
             <div class="flex-1 px-5 py-3 text-right text-sm text-slate-700">
-              {{ rt((pair as any).jp) }}
+              {{ pair.jp }}
             </div>
             <div class="flex items-center gap-2 px-3">
               <span class="h-2 w-2 rounded-full bg-red-600"></span>
               <span class="h-2 w-2 rounded-full bg-blue-700"></span>
             </div>
             <div class="flex-1 px-5 py-3 text-sm text-slate-700">
-              {{ rt((pair as any).mn) }}
+              {{ pair.mn }}
             </div>
           </div>
         </div>
@@ -83,4 +83,10 @@
 
 <script setup lang="ts">
 const { t, tm, rt } = useI18n();
+
+const japanBullets = computed(() => tm('whyNow.japanBullets') as string[]);
+const mongoliaBullets = computed(() => tm('whyNow.mongoliaBullets') as string[]);
+const synergy = computed(() =>
+  tm('whyNow.synergy') as Array<{ jp: string; mn: string }>
+);
 </script>
