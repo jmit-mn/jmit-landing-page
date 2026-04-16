@@ -23,7 +23,9 @@
         </div>
         <div>
           <h3 class="text-xl font-bold text-slate-900">Sura.Kh</h3>
-          <p class="text-sm text-slate-500">@sugarragchaa.kh</p>
+          <p class="text-sm text-slate-500">
+            <a href="mailto:sugarragchaa.kh@gmail.com">@sura.kh</a>
+          </p>
           <p class="mt-3 text-sm leading-relaxed text-slate-600">
             {{ t('about.bio') }}
           </p>

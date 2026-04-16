@@ -1,7 +1,7 @@
 <template>
   <section
     id="top"
-    class="relative overflow-hidden bg-gradient-to-b from-white to-slate-50 py-24 sm:py-32"
+    class="relative overflow-hidden bg-linear-to-b from-white to-slate-50 py-24 sm:py-32"
   >
     <div class="mx-auto max-w-4xl px-6 text-center">
       <div class="mb-6 flex items-center justify-center gap-2">

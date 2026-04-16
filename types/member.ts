@@ -6,4 +6,5 @@ export type MemberCompany = {
   classification: "japan" | "mongolia";
   members?: number;
   memberType?: "partner" | "observer";
+  link?: string;
 };

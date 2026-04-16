@@ -14,13 +14,13 @@
 
       <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         <article
-          v-for="(area, idx) in tm('focus.areas')"
+          v-for="(area, idx) in tm('focus.areas') as string[]"
           :key="idx"
           class="rounded-2xl border border-slate-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md"
         >
           <div class="mb-4 flex items-center gap-3">
             <div
-              class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-red-600 to-blue-700 text-sm font-bold text-white"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-linear-to-br from-red-600 to-blue-700 text-sm font-bold text-white"
             >
               {{ idx + 1 }}
             </div>
