@@ -3,16 +3,15 @@
     <div class="mx-auto max-w-6xl px-6">
       <div class="mb-12 text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-blue-700">
-          Consortium
+          {{ $t('members.kicker') }}
         </p>
         <h2
           class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
         >
-          Member Companies
+          {{ $t('members.heading') }}
         </h2>
         <p class="mx-auto mt-4 max-w-2xl text-base text-slate-600">
-          Companies represented on the JMIT board — driving intellectual
-          cooperation between Japan and Mongolia.
+          {{ $t('members.description') }}
         </p>
       </div>
 

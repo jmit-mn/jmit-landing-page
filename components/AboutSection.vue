@@ -3,12 +3,12 @@
     <div class="mx-auto max-w-4xl px-6">
       <div class="mb-12 text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-blue-700">
-          Leadership
+          {{ $t('about.kicker') }}
         </p>
         <h2
           class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
         >
-          Executive Director
+          {{ $t('about.heading') }}
         </h2>
       </div>
 
@@ -25,9 +25,7 @@
           <h3 class="text-xl font-bold text-slate-900">Sura.Kh</h3>
           <p class="text-sm text-slate-500">@sugarragchaa.kh</p>
           <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Executive Director at JMIT (2024~) and CEO of Tab Systems Mongolia
-            LLC. Previously Engineering Manager at Rakuten Group, Inc.
-            (2017–2024). Graduate of Tokyo University of Electro-Communications.
+            {{ $t('about.bio') }}
           </p>
         </div>
       </div>

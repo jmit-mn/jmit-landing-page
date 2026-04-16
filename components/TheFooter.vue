@@ -11,9 +11,17 @@
             >JMIT</span
           >
         </div>
-        <p class="text-sm text-slate-600">
-          Japan Mongolia IT Consortium &copy; {{ year }}
-        </p>
+        <div class="text-center sm:text-right">
+          <p class="text-sm text-slate-600">
+            {{ $t('footer.copyright', { year }) }}
+          </p>
+          <a
+            href="mailto:jmit-consortium@googlegroups.com"
+            class="mt-1 inline-block text-xs text-slate-400 transition hover:text-slate-600"
+          >
+            jmit-consortium@googlegroups.com
+          </a>
+        </div>
       </div>
     </div>
   </footer>
