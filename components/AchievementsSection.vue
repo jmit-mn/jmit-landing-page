@@ -77,6 +77,5 @@ const milestones = [
     event:
       "ICT Seminar 2025 in Tokyo — attended by Mongolian Foreign Minister",
   },
-  { date: "2026-03", event: "DX Cup 2025 (planned) with DX Mongolia" },
 ];
 </script>
